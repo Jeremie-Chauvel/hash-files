@@ -1,0 +1,59 @@
+{
+  "name": "@jeremiec/hash-files",
+  "version": "1.0.2",
+  "description": "Create a basic hash of a directory recursively",
+  "main": "bin/main.js",
+  "preferGlobal": true,
+  "bin": {
+    "hashFiles": "bin/main.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build": "rm -rf bin/ && babel ./src --out-dir ./bin --source-maps --copy-files",
+    "test:lint": "eslint --config eslintrc.json \"**/*.js\"",
+    "start": "./src/main.js ./test/test-files",
+    "prettier": "prettier --write \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeremie-Chauvel/hash-files.git"
+  },
+  "keywords": [
+    "hash",
+    "recursive",
+    "directory"
+  ],
+  "author": "jeremiec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeremie-Chauvel/hash-files/issues"
+  },
+  "homepage": "https://github.com/Jeremie-Chauvel/hash-files#readme",
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "10"
+          }
+        }
+      ]
+    ]
+  }
+}
