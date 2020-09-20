@@ -4,6 +4,11 @@ Create a basic hash of a directory recursively, ignoring `.git` and `node_module
 
 ## Install
 
-- node v10+ required
+- Node.js v10+ required
 - install with `npm install -g @jeremiec/hash-files` (`yarn add -g @jeremiec/hash-files`)
-- run it: `hashFiles .`
+
+## Usage
+
+- run it: `hashFiles <directory path or file path>`
+
+![Usage example](./usage.gif)

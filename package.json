@@ -1,6 +1,6 @@
 {
   "name": "@jeremiec/hash-files",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create a basic hash of a directory recursively",
   "main": "bin/main.js",
   "preferGlobal": true,
